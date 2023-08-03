@@ -1,0 +1,90 @@
+<DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<TITLE> Admin Login</TITLE>
+		<style type= text/css >
+			body{
+				background-image: url("pexels-cottonbro-4065864.jpg");
+				background-position: center;
+				background-size: cover;
+				}
+			table{
+				padding-top: 250px;
+				border-collapse:separate; 
+				border-spacing: 0 1em;
+			
+				}
+				#title1{
+				
+					 
+					 font-family: "Times New Roman", Times, serif;
+					 font-size: 40px;
+					 
+					 }
+					 B{
+					 font-family: "Times New Roman", Times, serif;
+					 font-size: 18px;
+					 }
+					 
+			</style>
+	</HEAD>
+	<BODY >
+		<FORM  method= "post" action= "admin_login.php" >
+			<TABLE align="center" > 
+				<TR >
+					<TD colspan=2 id="title1" ><center><FONT size= 4><h1> Admin Login Page</h1></FONT></center></TD>
+				</TR>
+			
+				<TR >
+					<TD><B>Username:</b></TD>
+					<TD><INPUT type="text" name="Adminid"></TD>
+				</TR>
+				<TR >
+					<TD><b >Password:</B></TD>
+					<TD><INPUT type="Password" name="Admin_pwd"></TD>
+				</TR>
+				<TR>
+					
+					<TD><INPUT type="reset" ></TD>
+					<TD><INPUT type="submit" value= "Login" ></TD>
+				</TR>
+			</TABLE>
+		</FORM>
+		
+		
+		<script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.Adminid.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+         if( document.myForm.Admin_pwd.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+     
+         return( true );
+      }
+	  
+	       function validateEmail() {
+         var emailID = document.myForm.Adminid.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
+	</BODY>
+</HTML>
+				

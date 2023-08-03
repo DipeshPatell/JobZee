@@ -1,0 +1,40 @@
+body{
+
+	margin: 0;
+	padding: 0;
+	background: url("slider_img.png");
+	background-size: cover;
+	font-family: Times New Roman;
+
+}
+.login_box{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 360px;
+		height: 430px;
+		padding: 80px 40px;
+		box-sizing: border-box;
+		background:rgba(0,0,0,0.5);
+}
+
+.login_box input[type="submit"]
+{
+	border:none;
+	outline:none;
+	height:40px;
+	color: #fff;
+	font-size: 16px;
+	background: rgb(0,128,0);
+	cursor: pointer;
+	border-radius: 20px;
+}
+.login_box input[type="submit"]: hover
+{
+	background: #efed40;
+	color: #262626;
+}
+
+		
+		
